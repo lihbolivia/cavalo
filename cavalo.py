@@ -1,17 +1,17 @@
 import pyautogui as pg
 
 while True:
-    a= pg.confirm("você é um cavalo?" , buttons=["yes","nope"])
-    if a=="yes":
+    a= pg.confirm("você é um cavalo?" , buttons=["sim","nao"])
+    if a=="sim":
         break
    
-    elif a=="nope":
-         a= pg.confirm("voce tem certeza?" , buttons=["yes","nope"])
+    elif a=="nao":
+         a= pg.confirm("voce tem certeza?" , buttons=["sim","nao"])
   
-         if a=="yes":
+         if a=="sim":
           a=pg.confirm("isso é o que um cavalo diria🤔", buttons=["sim","tem razao"]) 
           
-         elif a=="nope":
+         elif a=="nao":
              a=pg.confirm("você é um cavalo mas não sabe.", buttons=["ok","ok"])
     if a=="ok":
          break
